@@ -1,0 +1,31 @@
+@import '../../variables.scss';
+
+.Game {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  flex-wrap: wrap;
+
+  canvas {
+    display: block;
+    margin: 0 auto;
+    order: 1;
+  }
+
+  .video-container {
+    order: 2
+  };
+
+  @media (max-width: 1400px) {
+    canvas {
+      order: 2;
+    }
+
+    .video-container {
+      order: 1;
+    }
+  }
+}
