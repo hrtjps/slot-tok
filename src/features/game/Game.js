@@ -16,7 +16,7 @@ const Game = () => {
   const navigate = useNavigate();
 
   const [videoLink, setVideoLink] = useState({
-    url: "https://www.w3schools.com/tags/movie.mp4",
+    url: "",
     id: -1
   });
 

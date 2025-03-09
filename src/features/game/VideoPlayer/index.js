@@ -18,10 +18,12 @@ const VideoPlayer = ({
 
     if (video?.user_id) {
       video?.engagements.map((item) => {
-        if (item.user == video.user_id) {
+        if (item.user === video.user_id) {
           if (item.action === "like") setIsLiked(true);
           else if (item.action === "favourite") setIsFavourite(true);
         }
+
+        return item;
       })
     }
 
