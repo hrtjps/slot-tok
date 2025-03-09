@@ -53,8 +53,12 @@ const Game = () => {
       }
 
       elRef.current.prepend(game.renderer.view);
+      console.log(game.renderer)
       function resizeGame() {
-        game.renderer.resize(elRef.current.clientWidth, elRef.current.clientHeight);
+        const clientWidth = elRef.current.clientWidth;
+        const clientHeight = elRef.current.clientHeight;
+        console.log(clientWidth)
+        game.renderer.resize(clientWidth > 1700 ? clientWidth - 650 : clientWidth, clientHeight > 1700 ? 960 : clientHeight);
       }
       
       window.addEventListener("resize", resizeGame);
@@ -69,6 +73,7 @@ const Game = () => {
     <div
       className="Game"
       ref={elRef}
+      id="egyptian-treasures"
     >
       <VideoPlayer video={videoLink} />
     </div>
