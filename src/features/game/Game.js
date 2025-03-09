@@ -53,6 +53,12 @@ const Game = () => {
       }
 
       elRef.current.prepend(game.renderer.view);
+      function resizeGame() {
+        game.renderer.resize(elRef.current.clientWidth, elRef.current.clientHeight);
+      }
+      
+      window.addEventListener("resize", resizeGame);
+      resizeGame();
     });
     return () => {
       game.destroy();

@@ -49,12 +49,14 @@ const VideoPlayer = ({
   return (
     <div className="video-container">
       <ReactPlayer
+        key={video.url}
         playing
         url={video.url}
         controls
+        playsinline
         className="player"
         height='100%'
-        key={video.url}
+        config={{ file: { forceHLS: true } }}
       />
 
       <div className="engagement-group">

@@ -2,15 +2,18 @@
     text-align: center;
     height: calc(100vh - 10px);
     position: relative;
-    &:hover > .engagement-group {
+
+    &:hover>.engagement-group {
         opacity: 1;
     }
+
     .engagement-group {
         transition: all 0.2s;
         position: absolute;
         opacity: 0;
         bottom: 40px;
-        left: 30%;
+        left: 50%;
+        transform: translate(-50%, 0);
         display: inline-flex;
         margin: auto;
         justify-content: center;
@@ -39,6 +42,15 @@
 
             img {
                 width: 28px;
+            }
+
+            @media (max-width: 576px) {
+                width: 42px;
+                height: 42px;
+
+                img {
+                    width: 20px;
+                }
             }
         }
     }
