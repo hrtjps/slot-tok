@@ -2,39 +2,51 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Project setup
 
-### `npm start`
+```bash
+$ npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Compile and run the project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+# development
+$ npm run start
+```
 
-### `npm test`
+## Implemented
+- Seamless Slot Machine Animation
+    - Pixi.js-powered animations create smooth and high-performance reel spinning.
+    - Optimized rendering ensures no lag across different devices.
+    - Fluid transitions and visual effects enhance the immersive feel of the game.
+- Dynamic Video Streaming System
+    - Seamless video playback is integrated into the game, enhancing user engagement.
+    - The stream video updates with every spin, ensuring a fresh experience for players.
+    - Continuous streaming: Video URLs refresh dynamically to provide an endless stream of curated content.
+- Mobile-Responsive Gameplay
+    - Fully responsive UI, adapting to different screen sizes and orientations.
+    - Touch-friendly interactions ensure a smooth experience on mobile devices.
+    - Optimized layouts and performance enhancements for low-latency gameplay.
+- Real-Time Backend Integration via WebSockets
+    - WebSocket connection enables real-time communication with the backend.
+    - Instant updates on bet results, spin outcomes, and video streams.
+    - Enhances synchronization between the frontend and backend, reducing delay.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## To Enrich
+- Authentication System
+    - Guest mode removal: Players will be required to register and log in to access the game.
+    - User Accounts: Secure authentication with email/password or social login.
+    - Persistent Sessions: Implement JWT or OAuth-based authentication for seamless login experiences.
+- Video System Enhancements
+    - Revamped Video Player UI: A more modern, user-friendly design for an immersive viewing experience.
+    - Social Sharing Feature: Players can share videos directly from the game via links or social media buttons.
+    - Better Content Discovery: Enhanced controls and layout for smoother navigation of video content.
+- Gameplay Enhancements
+    - Daily Free Spin Rewards:
+        - Players receive a free spin every 24 hours.
+        - Encourages daily logins and player retention.
+    - Unlockable Rewards System:
+        - Wins from spins will unlock exclusive content, power-ups, or in-game currency.
+        - Adds a progression-based incentive, keeping players engaged over time.
